@@ -10,11 +10,11 @@
   <a href="#about"><strong>Explore the screenshots »</strong></a>
   <br />
   <br />
-  <a href="https://github.com/majeurbilly/vermac-projet-hackathon-2025/issues/new?assignees=&labels=bug&template=01_BUG_REPORT.md&title=bug%3A+">Report a Bug</a>
+  <a href="https://github.com/majeurbilly/projet_name/issues/new?assignees=&labels=bug&template=01_BUG_REPORT.md&title=bug%3A+">Report a Bug</a>
   ·
-  <a href="https://github.com/majeurbilly/vermac-projet-hackathon-2025/issues/new?assignees=&labels=enhancement&template=02_FEATURE_REQUEST.md&title=feat%3A+">Request a Feature</a>
+  <a href="https://github.com/majeurbilly/projet_name/issues/new?assignees=&labels=enhancement&template=02_FEATURE_REQUEST.md&title=feat%3A+">Request a Feature</a>
   .
-  <a href="https://github.com/majeurbilly/vermac-projet-hackathon-2025/issues/new?assignees=&labels=question&template=04_SUPPORT_QUESTION.md&title=support%3A+">Ask a Question</a>
+  <a href="https://github.com/majeurbilly/projet_name/issues/new?assignees=&labels=question&template=04_SUPPORT_QUESTION.md&title=support%3A+">Ask a Question</a>
 </div>
 
 <details open="open">
@@ -43,9 +43,9 @@
 <table><tr><td>
 
 > **[📸]**
-> <b>project_name</b> is a photography platform (SAAS) made in Quebec ⚜️.
-> It is meant to provide a friendly website to photographers and their clients alike.
-> This project is made in collaboration and with the initiative of Studio Berlingot.
+> <b>vermac-projet-hackathon-2025</b> is a competition in Quebec city ⚜️.
+> Organized by Québec International's Mon Avenir TI initiative,
+> the challenge was to design a program that could determine a battery's lifespan based on received data.
 
 <details>
 <summary>Screenshots</summary>
@@ -65,11 +65,12 @@
 ### Built With
 
 > **[📸]**
-> - FastAPI
->  - Alembic
->  - Pydantic
->  - Docker
-> - Postgres
+> - Python 3.12
+> - UV
+> - Pip
+> - Prometheus_client
+> - Docker
+> - Grafana
 > - < Front End Stack >
 
 ## Getting Started
@@ -77,22 +78,37 @@
 ### Prerequisites
 
 > **[📸]**
-> To work with this project, you need to have poetry installed (for backend work) and <frontend tooling> for front-end work.
+> To work with this project, you need to have uv installed (on your .venv) and installed prometheus_client (for use the lib).
 
 ### Installation
 
 > **[📸]**
-> Installation for backend development is made via poetry.
-> Go to the `project_name/` directory and run
-> `poetry install` to install the backend. To use the deployment code you will need to run
-> `poetry install` in the `src/` folder
-> The tool should create a `.venv/` folder with the dependencies.
+> Installation for backend development is made via terminal on your root repository.
+> Go to the `terminal`
+> `scoop install uv` for install uv in your .venv
+> `pip install Flask` for use the library Flask
+> `uv pip install prometheus_client` for use the library prometheus_client
+> And `python .\main.py` for Run the program
+> web server access :
+  > web server http://localhost:8000/metrics
+> Installation for frontend development
+> Aller dans le dossier `vermac-projet-hackathon-2025\prepa\promfun\prometheus`
+> Go to the `terminal`
+> `docker compose up -d` pour partir le contenaire docker
+> docker access:
+  > Prometheus http://localhost:9090/
+  > Grafana http://localhost:9093/   
 
 ## Usage
 
 > **[📸]**
-> Once you have installed all dependencies, you can check the Makefile  at the root of the repository to get started.
-> Try to use`make` or `make help-more` in a shell to see the available commands.
+> backend
+  > A la ligne 106 du programme ce trouve le chemin vers le fichier .json ou se trouve les données utile au calcul du SOH. Selectionné le fichier a tester en changeant ce string 
+  > Suite a la commande python .\main.py executer dans le termial, celle-ci part le server web
+  > Une fois que le programme roule celui-ce traite le fichier .json
+  > le progamme selectionne la donnnée la plus recent en parcourant chaques données. cette donnée est stocké en variable au sain du programme pour calculé le SOH et est aussi envoyé en metric sur le pour 8000
+> frontend
+  > 
 
 ## Roadmap
 
