@@ -1,5 +1,6 @@
+<div align="center">
 # Project Ver MAC - Hackathon 2025
-
+</div>
 <h1 align="center">
     <img src="docs/images/logo.png" alt="Logo" width="100" height="100">
   </a>
