@@ -1,24 +1,27 @@
+# Project Ver MAC - Hackathon 2025
+
 <h1 align="center">
-  <a href="https://github.com/TheBeesness/project_name">
+  <a href="https://github.com/TheBeesness/project_ver_mac">
     <img src="docs/images/logo.png" alt="Logo" width="100" height="100">
   </a>
 </h1>
 
 <div align="center">
-   🐝📸⚜️ <b>hackathon 2025 - Projet Ver MAC</b> 🐝📸⚜️
+   🐝📸⚜️ <b>Hackathon 2025 - Project Ver MAC</b> 🐝📸⚜️
   <br />
   <a href="#about"><strong>Explore the screenshots »</strong></a>
   <br />
   <br />
-  <a href="https://github.com/majeurbilly/projet_name/issues/new?assignees=&labels=bug&template=01_BUG_REPORT.md&title=bug%3A+">Report a Bug</a>
+  <a href="https://github.com/TheBeesness/project_ver_mac/issues/new?assignees=&labels=bug&template=01_BUG_REPORT.md&title=bug%3A+">Report a Bug</a>
   ·
-  <a href="https://github.com/majeurbilly/projet_name/issues/new?assignees=&labels=enhancement&template=02_FEATURE_REQUEST.md&title=feat%3A+">Request a Feature</a>
-  .
-  <a href="https://github.com/majeurbilly/projet_name/issues/new?assignees=&labels=question&template=04_SUPPORT_QUESTION.md&title=support%3A+">Ask a Question</a>
+  <a href="https://github.com/TheBeesness/project_ver_mac/issues/new?assignees=&labels=enhancement&template=02_FEATURE_REQUEST.md&title=feat%3A+">Request a Feature</a>
+  ·
+  <a href="https://github.com/TheBeesness/project_ver_mac/issues/new?assignees=&labels=question&template=04_SUPPORT_QUESTION.md&title=support%3A+">Ask a Question</a>
 </div>
 
-<details open="open">
-<summary>Table of Contents</summary>
+---
+
+## Table of Contents
 
 - [About](#about)
   - [Built With](#built-with)
@@ -26,129 +29,181 @@
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
+- [Monitoring Tools Overview](#monitoring-tools-overview)
 - [Roadmap](#roadmap)
 - [Support](#support)
-- [Project assistance](#project-assistance)
 - [Contributing](#contributing)
-- [Authors & contributors](#authors--contributors)
+- [Authors & Contributors](#authors--contributors)
 - [Security](#security)
 - [Acknowledgements](#acknowledgements)
 
-</details>
-
----
-
 ## About
 
-<table><tr><td>
-
-> **[📸]**
-> <b>vermac-projet-hackathon-2025</b> is a competition in Quebec city ⚜️.
-> Organized by Québec International's Mon Avenir TI initiative,
-> the challenge was to design a program that could determine a battery's lifespan based on received data.
+Project **Ver MAC** was developed as part of Hackathon 2025 in Quebec City ⚜️, organized by **Québec International's Mon Avenir TI initiative**. The challenge was to design a program that could estimate a battery's lifespan based on collected data.
 
 <details>
 <summary>Screenshots</summary>
 <br>
+🛠️ Installation Process  
+<img src="docs/images/installation.png" alt="installation">
 
-> **[?]**
-> TODO: Actual Screenshots.
+🎨 Frontend Running  
+<img src="docs/images/using.png" alt="frontend_running">
 
-|                               Home Page                               |                               Login Page                               |
-| :-------------------------------------------------------------------: | :--------------------------------------------------------------------: |
-| <img src="docs/images/screenshot.png" title="Home Page" width="100%"> | <img src="docs/images/screenshot.png" title="Login Page" width="100%"> |
+📊 Metrics Displayed on Web Interface  
+<img src="docs/images/url_frontend.png" alt="metrics_web">
 
+🐳 Docker Containers Overview  
+<img src="docs/images/containers.png" alt="docker_containers">
+
+⚙️ Docker Configuration View  
+<img src="docs/images/config_view.png" alt="docker_config">
+
+🎯 Prometheus Targets  
+<img src="docs/images/target_prometheus.png" alt="prometheus_targets">
+
+🔍 Querying Metrics in Prometheus  
+<img src="docs/images/request_prometheus.png" alt="prometheus_query">
+
+📊 Grafana Dashboard  
+<img src="docs/images/gafana.png" alt="grafana_dashboard">
+
+🚨 AlertManager Interface  
+<img src="docs/images/alertmanager.png" alt="alertmanager">
 </details>
-
-</td></tr></table>
 
 ### Built With
 
-> **[📸]**
-> - Python 3.12
-> - UV
-> - Pip
-> - Prometheus_client
-> - Docker
-> - Grafana
-> - < Front End Stack >
+- **Python 3.12**
+- **UV**
+- **Pip**
+- **Prometheus_client**
+- **Docker**
+- **Grafana**
 
 ## Getting Started
 
 ### Prerequisites
 
-> **[📸]**
-> To work with this project, you need to have uv installed (on your .venv) and installed prometheus_client (for use the lib).
+To work with this project, you need to have:
+
+- **UV installed** (inside your virtual environment `.venv`)
+- **Prometheus_client installed** (for metric collection)
+- **Docker installed** (for containerized deployment)
 
 ### Installation
 
-> **[📸]**
-> Installation for backend development is made via terminal on your root repository.
-> Go to the `terminal`
-> `scoop install uv` for install uv in your .venv
-> `pip install Flask` for use the library Flask
-> `uv pip install prometheus_client` for use the library prometheus_client
-> And `python .\main.py` for Run the program
-> web server access :
-  > web server http://localhost:8000/metrics
-> Installation for frontend development
-> Aller dans le dossier `vermac-projet-hackathon-2025\prepa\promfun\prometheus`
-> Go to the `terminal`
-> `docker compose up -d` pour partir le contenaire docker
-> docker access:
-  > Prometheus http://localhost:9090/
-  > Grafana http://localhost:9093/   
+#### Backend Setup
+
+1. Open your **terminal**.
+2. Install `uv` (inside your virtual environment):
+   ```sh
+   scoop install uv
+   ```
+3. Install Flask:
+   ```sh
+   pip install Flask
+   ```
+4. Install Prometheus client library:
+   ```sh
+   uv pip install prometheus_client
+   ```
+5. Run the program:
+   ```sh
+   python main.py
+   ```
+6. Web server access:
+   ```sh
+   http://localhost:8000/metrics
+   ```
+
+#### Frontend Setup
+
+1. Navigate to:
+   ```sh
+   cd vermac-projet-hackathon-2025/prepa/promfun/prometheus
+   ```
+2. Start Docker containers:
+   ```sh
+   docker compose up -d
+   ```
+3. Web access:
+   - **Prometheus**: [http://localhost:9090/](http://localhost:9090/)
+   - **Grafana**: [http://localhost:3000/](http://localhost:3000/)
+   - **AlertManager**: [http://localhost:9093/](http://localhost:9093/)
 
 ## Usage
 
-> **[📸]**
-> backend
-  > A la ligne 106 du programme ce trouve le chemin vers le fichier .json ou se trouve les données utile au calcul du SOH. Selectionné le fichier a tester en changeant ce string 
-  > Suite a la commande python .\main.py executer dans le termial, celle-ci part le server web
-  > Une fois que le programme roule celui-ce traite le fichier .json
-  > le progamme selectionne la donnnée la plus recent en parcourant chaques données. cette donnée est stocké en variable au sain du programme pour calculé le SOH et est aussi envoyé en metric sur le pour 8000
-> frontend
-  > 
+### Backend
+
+1. In `main.py`, set the path to the `.json` file containing the battery data.
+2. Run:
+   ```sh
+   python main.py
+   ```
+3. The program will process the latest data entry and compute the **State of Health (SOH)** metric.
+4. The SOH value is stored and exposed via the web server on port **8000**.
+5. Check the processed metrics:
+   ```sh
+   http://localhost:8000/metrics
+   ```
+
+### Frontend
+
+1. Install **Docker Desktop**: [Docker Website](https://www.docker.com/)
+2. Navigate to the frontend directory:
+   ```sh
+   cd frontend
+   ```
+3. Start the containers:
+   ```sh
+   docker compose up -d
+   ```
+4. Access monitoring tools:
+   - **Prometheus**: [http://localhost:9090/](http://localhost:9090/)
+   - **Grafana**: [http://localhost:3000/](http://localhost:3000/)
+   - **AlertManager**: [http://localhost:9093/](http://localhost:9093/)
+
+## Monitoring Tools Overview
+
+### Prometheus
+Prometheus is a powerful open-source monitoring and alerting toolkit designed for reliability and scalability. It collects metrics from configured targets at given intervals, evaluates rule expressions, displays results, and triggers alerts if certain conditions are met.
+
+### Grafana
+Grafana is an open-source platform for monitoring and observability. It provides interactive visualizations, customizable dashboards, and integrations with multiple data sources, including Prometheus, to facilitate real-time data analysis.
+
+### AlertManager
+AlertManager handles alerts sent by Prometheus. It manages alert deduplication, grouping, silencing, and sending notifications via email, Slack, or other channels. It ensures efficient incident management and response in a production environment.
 
 ## Roadmap
 
-See the [open issues](https://github.com/TheBeesness/project_name/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/TheBeesness/project_ver_mac/issues) for upcoming features and known issues.
 
-- [Top Feature Requests](https://github.com/TheBeesness/project_name/issues?q=label%3Aenhancement+is%3Aopen+sort%3Areactions-%2B1-desc) (Add your votes using the 👍 reaction)
-- [Top Bugs](https://github.com/TheBeesness/project_name/issues?q=is%3Aissue+is%3Aopen+label%3Abug+sort%3Areactions-%2B1-desc) (Add your votes using the 👍 reaction)
-- [Newest Bugs](https://github.com/TheBeesness/project_name/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
+- [Feature Requests](https://github.com/TheBeesness/project_ver_mac/issues?q=label%3Aenhancement+is%3Aopen+sort%3Areactions-%2B1-desc)
+- [Top Bugs](https://github.com/TheBeesness/project_ver_mac/issues?q=is%3Aissue+is%3Aopen+label%3Abug+sort%3Areactions-%2B1-desc)
+- [Newest Bugs](https://github.com/TheBeesness/project_ver_mac/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
 
 ## Support
 
-> **[📸]**
-> Additional support is available upon request. Contact information should have been shared already.
-
-## Project assistance
-
-If you want to say **thank you** or/and support active development of <b>project_name</b>:
-
-- Add a [GitHub Star](https://github.com/TheBeesness/project_name) to the project.
-- Tweet about <b>project_name</b>.
+If you need additional support, feel free to reach out.
 
 ## Contributing
 
-Please read [our contribution guidelines](docs/CONTRIBUTING.md), and thank you for being involved!
+Please read [our contribution guidelines](docs/CONTRIBUTING.md) before submitting pull requests or issues.
 
-## Authors & contributors
+## Authors & Contributors
 
-The original setup of this repository is by [Beesness Core Team](https://github.com/TheBeesness).
+Project Ver MAC was developed by the **Beesness Core Team**.
 
-For a full list of all authors and contributors, see [the contributors page](https://github.com/TheBeesness/project_name/contributors).
+See the full list of contributors on [GitHub](https://github.com/TheBeesness/project_ver_mac/contributors).
 
 ## Security
 
-<b>project_name</b> follows good practices of security, but 100% security cannot be assured.
-<b>project_name</b> is provided **"as is"** without any **warranty**. Use at your own risk.
+Project Ver MAC follows good security practices, but absolute security cannot be guaranteed. Use at your own risk.
 
-_For more information and to report security issues, please refer to our [security documentation](docs/SECURITY.md)._
-
+For security concerns, refer to our [security documentation](docs/SECURITY.md).
 
 ## Acknowledgements
 
-> **[📸]**
-> TODO
+Special thanks to **Québec International** for organizing Hackathon 2025 and providing this opportunity to innovate.
+

@@ -1,4 +1,4 @@
-name: promfun
+name: frontend
 services:
     prometheus:
         container_name: prometheus
