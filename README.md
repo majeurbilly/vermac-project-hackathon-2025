@@ -1,48 +1,65 @@
-<h1 align="center">
- Project Ver MAC - Hackathon 2025
-</h1>
-<h2 align="center">
-    <img src="docs/images/logo.png" alt="Logo" width="100" height="100">
-  </a>
-</h2>
-
+<!-- PROJECT LOGO -->
+<br />
 <div align="center">
-   🐝📸⚜️ <b>Hackathon 2025 - Project Ver MAC</b> 🐝📸⚜️
-  <br />
-  <a href="#about"><strong>Explore the screenshots »</strong></a>
-  <br />
-  <br />
-  <a href="https://github.com/TheBeesness/project_ver_mac/issues/new?assignees=&labels=bug&template=01_BUG_REPORT.md&title=bug%3A+">Report a Bug</a>
-  ·
-  <a href="https://github.com/TheBeesness/project_ver_mac/issues/new?assignees=&labels=enhancement&template=02_FEATURE_REQUEST.md&title=feat%3A+">Request a Feature</a>
-  ·
-  <a href="https://github.com/TheBeesness/project_ver_mac/issues/new?assignees=&labels=question&template=04_SUPPORT_QUESTION.md&title=support%3A+">Ask a Question</a>
+  <a href="https://github.com/majeurbilly/project_name">
+    <img src="images/logo.png" alt="Logo" width="100" height="100">
+  </a>
+
+  <h3 align="center">Hackathon 2025 🦆</h3>
+
+  <p align="center">
+    Project Ver-MAC
+    <br />
+    <a href="#about"><strong>Explore the screenshots »</strong></a>
+      <br />
+      <br />
+      <a href="https://github.com/TheBeesness/project_ver_mac/issues/new?assignees=&labels=bug&template=01_BUG_REPORT.md&title=bug%3A+">Report a Bug</a>
+      ·
+      <a href="https://github.com/TheBeesness/project_ver_mac/issues/new?assignees=&labels=enhancement&template=02_FEATURE_REQUEST.md&title=feat%3A+">Request a Feature</a>
+      ·
+      <a href="https://github.com/TheBeesness/project_ver_mac/issues/new?assignees=&labels=question&template=04_SUPPORT_QUESTION.md&title=support%3A+">Ask a Question</a>
+  </p>
 </div>
 
----
 
-## Table of Contents
 
-- [About](#about)
-  - [Built With](#built-with)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Monitoring Tools Overview](#monitoring-tools-overview)
-- [Roadmap](#roadmap)
-- [Support](#support)
-- [Contributing](#contributing)
-- [Authors & Contributors](#authors--contributors)
-- [Security](#security)
-- [Acknowledgements](#acknowledgements)
 
+  ## Table of Contents
+  <ol>
+    <li>
+      <a href="#about">About</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#monitoring-tools-overview">Monitoring Tools Overview</a></li>
+    <li><a href="#authors--contributors">Authors & Contributors</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+
+
+
+
+<!-- ABOUT THE PROJECT -->
 ## About
+Project **Project Name** is a reusable project of readme template made in March 2025 in Quebec City ⚜️ 
 
-Project **Ver MAC** was developed as part of Hackathon 2025 in Quebec City ⚜️, organized by **Québec International's Mon Avenir TI initiative**. The challenge was to design a program that could estimate a battery's lifespan based on collected data.
+Reste of description of **next project**
+
+
 
 <details>
-<summary>🖼️ Screenshots 👉 Clic here </summary>
+<summary>
+  <img src="docs/images/button.png" alt="button image" height=40> 
+</summary>
 <br>
 🛠️ Installation Process  
 <img src="docs/images/installation.png" alt="installation">
@@ -175,35 +192,17 @@ Grafana is an open-source platform for monitoring and observability. It provides
 ### AlertManager
 AlertManager handles alerts sent by Prometheus. It manages alert deduplication, grouping, silencing, and sending notifications via email, Slack, or other channels. It ensures efficient incident management and response in a production environment.
 
-## Roadmap
-
-See the [open issues](https://github.com/TheBeesness/project_ver_mac/issues) for upcoming features and known issues.
-
-- [Feature Requests](https://github.com/TheBeesness/project_ver_mac/issues?q=label%3Aenhancement+is%3Aopen+sort%3Areactions-%2B1-desc)
-- [Top Bugs](https://github.com/TheBeesness/project_ver_mac/issues?q=is%3Aissue+is%3Aopen+label%3Abug+sort%3Areactions-%2B1-desc)
-- [Newest Bugs](https://github.com/TheBeesness/project_ver_mac/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
-
-## Support
-
-If you need additional support, feel free to reach out.
-
-## Contributing
-
-Please read [our contribution guidelines](docs/CONTRIBUTING.md) before submitting pull requests or issues.
-
 ## Authors & Contributors
 
-Project Ver MAC was developed by the **Beesness Core Team**.
+Project Ver MAC was developed by the team #8
 
-See the full list of contributors on [GitHub](https://github.com/TheBeesness/project_ver_mac/contributors).
+## Acknowledgments
 
-## Security
+Remerciment:
 
-Project Ver MAC follows good security practices, but absolute security cannot be guaranteed. Use at your own risk.
+* [Prometheus](https://prometheus.io/)
+* [Grafana](https://grafana.com/)
 
-For security concerns, refer to our [security documentation](docs/SECURITY.md).
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Acknowledgements
-
-Special thanks to **Québec International** for organizing Hackathon 2025 and providing this opportunity to innovate.
 
