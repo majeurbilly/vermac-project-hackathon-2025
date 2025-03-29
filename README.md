@@ -1,7 +1,7 @@
 # Project Ver MAC - Hackathon 2025
 
 <h1 align="center">
-  <a href="https://github.com/TheBeesness/project_ver_mac">
+  <a href="[https://github.com/TheBeesness/project_ver_mac](https://github.com/majeurbilly/vermac-project-hackathon-2025)">
     <img src="docs/images/logo.png" alt="Logo" width="100" height="100">
   </a>
 </h1>
