@@ -1,7 +1,3 @@
-Voici une version traduite de ton README en français :
-
----
-
 # Projet Ver MAC - Hackathon 2025
 
 <h1 align="center">
