@@ -1,10 +1,10 @@
-<div align="center">
-# Project Ver MAC - Hackathon 2025
-</div>
 <h1 align="center">
+ Project Ver MAC - Hackathon 2025
+</h1>
+<h2 align="center">
     <img src="docs/images/logo.png" alt="Logo" width="100" height="100">
   </a>
-</h1>
+</h2>
 
 <div align="center">
    🐝📸⚜️ <b>Hackathon 2025 - Project Ver MAC</b> 🐝📸⚜️
