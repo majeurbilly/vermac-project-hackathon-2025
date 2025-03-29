@@ -62,7 +62,6 @@ Reste of description of **next project**
       <img src="docs/images/button.png" alt="button image" height="40">
     </a>
  </summary>
-  ## images
 <br>
 🛠️ Installation Process  
 <img src="docs/images/installation.png" alt="installation">
