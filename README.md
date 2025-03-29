@@ -58,7 +58,7 @@ Reste of description of **next project**
 
 <details>
 <summary>
-    <a href="URL_DU_LIEN">
+    <a>
       <img src="docs/images/button.png" alt="button image" height="40">
     </a>
   </summary>
