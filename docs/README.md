@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/majeurbilly/project_name">
-    <img src="../images/logo.png" alt="Logo" width="100" height="100">
+    <img src="images/logo.png" alt="Logo" width="100" height="100">
   </a>
 
   <h3 align="center">Hackathon 2025 🦆</h3>
@@ -41,35 +41,35 @@ Description complète du **prochain projet**.
 
 <details>
 <summary>
-  <img src="../docs/images/button.png" alt="bouton image" height=40> 
+  <img src="images/button.png" alt="bouton image" height=40> 
 </summary>
 <br>
 🛠️ Processus d'installation  
-<img src="../docs/images/installation.png" alt="installation">
+<img src="images/installation.png" alt="installation">
 
 🎨 Exécution du frontend  
-<img src="../docs/images/using.png" alt="frontend_running">
+<img src="images/using.png" alt="frontend_running">
 
 📊 Affichage des métriques sur l'interface web  
-<img src="docs/images/url_frontend.png" alt="metrics_web">
+<img src="images/url_frontend.png" alt="metrics_web">
 
 🐳 Vue d'ensemble des conteneurs Docker  
-<img src="../docs/images/containers.png" alt="docker_containers">
+<img src="images/containers.png" alt="docker_containers">
 
 ⚙️ Configuration Docker  
-<img src="../docs/images/config_view.png" alt="docker_config">
+<img src="images/config_view.png" alt="docker_config">
 
 🎯 Cibles Prometheus  
-<img src="../docs/images/target_prometheus.png" alt="prometheus_targets">
+<img src="images/target_prometheus.png" alt="prometheus_targets">
 
 🔍 Requête de métriques dans Prometheus  
-<img src="../docs/images/request_prometheus.png" alt="prometheus_query">
+<img src="images/request_prometheus.png" alt="prometheus_query">
 
 📊 Tableau de bord Grafana  
-<img src="../docs/images/gafana.png" alt="grafana_dashboard">
+<img src="images/gafana.png" alt="grafana_dashboard">
 
 🚨 Interface AlertManager  
-<img src="../docs/images/alertmanager.png" alt="alertmanager">
+<img src="images/alertmanager.png" alt="alertmanager">
 </details>
 
 ### Construit avec
