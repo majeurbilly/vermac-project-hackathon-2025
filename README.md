@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/majeurbilly/project_name">
-    <img src="images/logo.png" alt="Logo" width="100" height="100">
+    <img src="docs/images/logo.png" alt="Logo" width="100" height="100">
   </a>
 
   <h3 align="center">Hackathon 2025 🦆</h3>
@@ -58,7 +58,7 @@ Reste of description of **next project**
 
 <details>
 <summary>
-  <img src="docs/images/button.png" alt="button image" height=40> 
+  <a src="docs/images/button.png" alt="button image" height=40> 
 </summary>
 <br>
 🛠️ Installation Process  
