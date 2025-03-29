@@ -50,11 +50,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About
-Project **Project Name** is a reusable project of readme template made in March 2025 in Quebec City ⚜️ 
-
-Reste of description of **next project**
-
-
+The Ver MAC project was developed as part of the 2025 Hackathon in Québec ⚜️, organized by the Mon Avenir TI initiative of Québec International. The challenge was to design a program capable of estimating battery lifespan based on collected data.
 
 <details>
  <summary>
