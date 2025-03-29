@@ -42,7 +42,7 @@
 Project **Ver MAC** was developed as part of Hackathon 2025 in Quebec City ⚜️, organized by **Québec International's Mon Avenir TI initiative**. The challenge was to design a program that could estimate a battery's lifespan based on collected data.
 
 <details>
-<summary>Screenshots</summary>
+<summary>🖼️ Screenshots 👉 Clic here </summary>
 <br>
 🛠️ Installation Process  
 <img src="docs/images/installation.png" alt="installation">
