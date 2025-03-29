@@ -58,9 +58,7 @@ Reste of description of **next project**
 
 <details>
 <summary>
-    <a>
-      <img src="docs/images/button.png" alt="button image" height="40">
-    </a>
+      <img src="docs/images/button.png" alt="button image" height="40"> 
   </summary>
 <br>
 🛠️ Installation Process  
