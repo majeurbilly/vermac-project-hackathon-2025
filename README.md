@@ -50,7 +50,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About
-**project_name** is a ... description
+The Ver MAC project was developed as part of the 2025 Hackathon in Québec ⚜️, organized by the Mon Avenir TI initiative of Québec International. The challenge was to design a program capable of estimating battery lifespan based on collected data.
 
 <details>
  <summary>
@@ -58,13 +58,34 @@
       <img src="docs/images/button.png" alt="button image" height="40">
     </a>
  </summary>
-</details>
 <br>
 🛠️ Installation Process  
 <img src="docs/images/installation.png" alt="installation">
 
 🎨 Frontend Running  
 <img src="docs/images/using.png" alt="frontend_running">
+
+📊 Metrics Displayed on Web Interface  
+<img src="docs/images/url_frontend.png" alt="metrics_web">
+
+🐳 Docker Containers Overview  
+<img src="docs/images/containers.png" alt="docker_containers">
+
+⚙️ Docker Configuration View  
+<img src="docs/images/config_view.png" alt="docker_config">
+
+🎯 Prometheus Targets  
+<img src="docs/images/target_prometheus.png" alt="prometheus_targets">
+
+🔍 Querying Metrics in Prometheus  
+<img src="docs/images/request_prometheus.png" alt="prometheus_query">
+
+📊 Grafana Dashboard  
+<img src="docs/images/gafana.png" alt="grafana_dashboard">
+
+🚨 AlertManager Interface  
+<img src="docs/images/alertmanager.png" alt="alertmanager">
+</details>
 
 ### Built With
 
@@ -80,41 +101,105 @@
 ### Prerequisites
 
 To work with this project, you need to have:
-- exemple
-- exemple
+
+- **UV installed** (inside your virtual environment `.venv`)
+- **Prometheus_client installed** (for metric collection)
+- **Docker installed** (for containerized deployment)
 
 ### Installation
 
+#### Backend Setup
+
 1. Open your **terminal**.
-2. Install ..
-3. Install ..
-4. Install ..
-5. Run the program ..
+2. Install `uv` (inside your virtual environment):
+   ```sh
+   scoop install uv
+   ```
+3. Install Flask:
+   ```sh
+   pip install Flask
+   ```
+4. Install Prometheus client library:
+   ```sh
+   uv pip install prometheus_client
+   ```
+5. Run the program:
+   ```sh
+   python main.py
+   ```
+6. Web server access:
+   ```sh
+   http://localhost:8000/metrics
+   ```
+
+#### Frontend Setup
+
+1. Navigate to:
+   ```sh
+   cd vermac-projet-hackathon-2025/prepa/promfun/prometheus
+   ```
+2. Start Docker containers:
+   ```sh
+   docker compose up -d
+   ```
+3. Web access:
+   - **Prometheus**: [http://localhost:9090/](http://localhost:9090/)
+   - **Grafana**: [http://localhost:3000/](http://localhost:3000/)
+   - **AlertManager**: [http://localhost:9093/](http://localhost:9093/)
 
 ## Usage
 
+### Backend
 
+1. In `main.py`, set the path to the `.json` file containing the battery data.
+2. Run:
+   ```sh
+   python main.py
+   ```
+3. The program will process the latest data entry and compute the **State of Health (SOH)** metric.
+4. The SOH value is stored and exposed via the web server on port **8000**.
+5. Check the processed metrics:
+   ```sh
+   http://localhost:8000/metrics
+   ```
 
-1. In `main`...
-2. Run ...
-3. etc ..
+### Frontend
 
-
+1. Install **Docker Desktop**: [Docker Website](https://www.docker.com/)
+2. Navigate to the frontend directory:
+   ```sh
+   cd frontend
+   ```
+3. Start the containers:
+   ```sh
+   docker compose up -d
+   ```
+4. Access monitoring tools:
+   - **Prometheus**: [http://localhost:9090/](http://localhost:9090/)
+   - **Grafana**: [http://localhost:3000/](http://localhost:3000/)
+   - **AlertManager**: [http://localhost:9093/](http://localhost:9093/)
 
 ## Monitoring Tools Overview
 
-...
+### Prometheus
+Prometheus is a powerful open-source monitoring and alerting toolkit designed for reliability and scalability. It collects metrics from configured targets at given intervals, evaluates rule expressions, displays results, and triggers alerts if certain conditions are met.
+
+### Grafana
+Grafana is an open-source platform for monitoring and observability. It provides interactive visualizations, customizable dashboards, and integrations with multiple data sources, including Prometheus, to facilitate real-time data analysis.
+
+### AlertManager
+AlertManager handles alerts sent by Prometheus. It manages alert deduplication, grouping, silencing, and sending notifications via email, Slack, or other channels. It ensures efficient incident management and response in a production environment.
 
 ## Authors & Contributors
 
-...
+Project Ver MAC was developed by the team #8
 
 ## Acknowledgments
 
 Remerciment:
 
-* exemple
-* exemple
+* [Prometheus](https://prometheus.io/)
+* [Grafana](https://grafana.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
